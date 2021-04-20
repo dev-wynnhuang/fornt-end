@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Image Change on Click</title>
+</head>
+<body>
+    
+    <img src="https://images.theconversation.com/files/28369/original/rqkwdwcx-1375195450.jpg?ixlib=rb-1.1.0&rect=7%2C2%2C1704%2C1102&q=45&auto=format&w=926&fit=clip" id="img" alt="moon">
+    
+
+    <script>
+        //declare variable
+        var img = document.querySelector('img')
+        console.log(img);
+
+        img.onclick = function(){
+            if (img.src == 'https://images.theconversation.com/files/28369/original/rqkwdwcx-1375195450.jpg?ixlib=rb-1.1.0&     rect=7%2C2%2C1704%2C1102&q=45&auto=format&w=926&fit=clip') {
+                img.src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.diabetes.co.uk%2Fdiabetes-and-sun-protection.html&psig=AOvVaw0qimKzIGSNfraY5koDbptu&ust=1618635982158000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCnhIz_gfACFQAAAAAdAAAAABAD'
+            }
+            else {
+                img.src = 'https://images.theconversation.com/files/28369/original/rqkwdwcx-1375195450.jpg?ixlib=rb-1.1.0&rect=7%2C2%2C1704%2C1102&q=45&auto=format&w=926&fit=clip'
+            }
+        }
+    </script>
+    1st img<!-- https://images.theconversation.com/files/28369/original/rqkwdwcx-1375195450.jpg?ixlib=rb-1.1.0&rect=7%2C2%2C1704%2C1102&q=45&auto=format&w=926&fit=clip -->
+    2nd img<!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.diabetes.co.uk%2Fdiabetes-and-sun-protection.html&psig=AOvVaw0qimKzIGSNfraY5koDbptu&ust=1618635982158000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCnhIz_gfACFQAAAAAdAAAAABAD -->
+
+</body>
+</html>
