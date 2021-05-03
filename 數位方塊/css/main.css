@@ -87,9 +87,9 @@ li{
 .Master{
     margin-bottom: 80px;
 }
-.my-img{
+/* .my-img{
     padding: 8px;
-}
+} */
 .my-price{
     margin-bottom: 80px;
 }
@@ -160,6 +160,12 @@ footer{
     border-radius: 50%;
     background-color: rgb(224,231,255);
 }
+.circle-lg{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-color: rgb(224,231,255);
+}
 .svg-star{
     width: 16px;
     color:rgb(99, 102,241);
@@ -173,4 +179,13 @@ footer{
     width: 20px;
     height: 20px;
     color: tomato;
+}
+.card-img-top{
+    border-radius: 4px;
+}
+.love-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightslategray;
 }
