@@ -187,5 +187,14 @@ footer{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: lightslategray;
+    background-color: rgb(170, 176, 182);
+}
+.my-love-btn{
+    width: 20px;
+    height: 20px;
+}
+#btn-1{
+    margin-top: unset;
+    background-color: rgb(99, 102,241);
+    color: white;
 }
