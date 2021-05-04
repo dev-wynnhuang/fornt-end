@@ -84,9 +84,6 @@ li{
     bottom: -5px;
     left: calc(50% - 40px);
 }
-.Master{
-    margin-bottom: 80px;
-}
 /* .my-img{
     padding: 8px;
 } */
@@ -113,6 +110,11 @@ li{
     position: absolute;
     bottom: -5px;
     left: 15px;
+}
+.card-wrap{
+    border-radius: 8px;
+    padding: 24px;
+    background-color: rgb(243, 244, 246);
 }
 .Taxidermy{
     margin-bottom: 80px;
@@ -166,6 +168,24 @@ footer{
     border-radius: 50%;
     background-color: rgb(224,231,255);
 }
+.circle-white{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+}
+.circle-black{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: black;
+}
+.circle-lavender{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgb(99, 102,241);
+}
 .svg-star{
     width: 16px;
     color:rgb(99, 102,241);
@@ -175,11 +195,11 @@ footer{
     color:rgb(99, 102,241);
     fill: none;
 }
-.my-color{
+/* .my-color{
     width: 20px;
     height: 20px;
     color: tomato;
-}
+} */
 .card-img-top{
     border-radius: 4px;
 }
