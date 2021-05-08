@@ -52,21 +52,48 @@
     <main>
         <div class="main-container">
             <div class="checkout-board">
-                <div class="checkout-inner">
                     <h2 class="text-left font-weight-bold">購物車</h2>
-                    <div class="progress d-flex justify-content-around">
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-center">確認購物車</span>
+                    <div class="progressbar">
+                        <div class="row no-gutters">
+                            <div class="col w-25">
+                                <div class="position-relative mb-3">
+                                    <div class="step1 mx-auto d-flex justify-content-center align-items-center text-white">
+                                        <span class="text-center">1</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">確認購物車</div>
+                            </div>
+                            <div class="col w-25">
+                                <div class="position-relative mb-3">
+                                    <div class="line position-absolute rounded" style="background-color: rgb(110, 231, 183);">                                        
+                                    </div>
+                                    <div class="step2 mx-auto d-flex justify-content-center align-items-center text-white">
+                                        <span class="text-center">2</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">付款與運送方式</div>
+                            </div>
+                            <div class="col w-25">
+                                <div class="position-relative mb-3">
+                                    <div class="line position-absolute rounded" style="background-color: rgb(110, 231, 183)">                                     
+                                    </div>
+                                    <div class="step3 mx-auto d-flex justify-content-center align-items-center text-white">
+                                        <span class="text-center">3</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">填寫資料</div>
+                            </div>
+                            <div class="col w-25">
+                                <div class="position-relative mb-3">
+                                    <div class="line position-absolute rounded" style="background-color: rgb(110, 231, 183)">                                       
+                                    </div>
+                                    <div class="step4 mx-auto d-flex justify-content-center align-items-center text-white">
+                                        <span class="text-center">4</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">完成訂購</div>
+                            </div>
                         </div>
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-center">付款與運送方式</span>
-                        </div>
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-center">填寫資料</span>
-                        </div>
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-center">完成訂購</span>
-                        </div>                   
                     </div>
                     <div class="final-order">
                         <h1 class="text-center">訂單成立</h1>
@@ -167,7 +194,6 @@
                     <div class="next-step d-flex justify-content-end align-items-center">                
                     <button type="button" class="btn btn-primary btn-lg" onclick="location.href='./main.html'">返回首頁</button>
                     </div>
-                </div>
             </div>
          </div>
     </main>

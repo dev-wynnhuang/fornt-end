@@ -49,16 +49,38 @@ main{
     background-color: whitesmoke;
     border-radius: 8px;
 }
-.checkout-inner{
+.progressbar{
     width: 100%;
-    /* background-color: whitesmoke; */
-    margin: auto;
-}
-.progress{
-    width: 100%;
-    height: 100%;
+    height: 120px;
     padding: 24px 0;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(229, 231, 235);
+}
+.step2, .step3, .step4{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+}
+.step1{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(16, 185, 129);
+}
+.line{
+    width: 180px;
+    height: 8px;
+    background-color: rgb(229, 231, 235);
+    top: calc(50% - 4px);
+    left: -90px;
+}
+.line-active{
+    width: 60px;
+    height: 8px;
+    background-color: rgb(110, 231, 183);
+    top: calc(50% - 4px);
+    left: 0;
 }
 .order-listing{
     padding-top: 20px;

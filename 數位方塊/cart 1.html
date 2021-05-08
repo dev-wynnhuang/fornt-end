@@ -52,110 +52,141 @@
     <main>
     <div class="main-container">
         <div class="checkout-board">
-            <div class="checkout-inner">
-                <h2 class="text-left font-weight-bold">購物車</h2>
-                <div class="progress d-flex justify-content-around">
-                    <div class="col-3 d-flex flex-column">
-                        <span class="text-center">確認購物車</span>
-                    </div>
-                    <div class="col-3 d-flex flex-column">
-                        <span class="text-center">付款與運送方式</span>
-                    </div>
-                    <div class="col-3 d-flex flex-column">
-                        <span class="text-center">填寫資料</span>
-                    </div>
-                    <div class="col-3 d-flex flex-column">
-                        <span class="text-center">完成訂購</span>
-                    </div>                   
-                </div>
-                <div class="order-listing">
-                    <h4 class="shopping-title">訂單明細</h4>
-                    <div class="detail d-flex flex-column justify-content-around">
-                        <div class="item1 d-flex justify-content-between">
-                            <div class="left d-flex align-items-center">
-                                <img src="https://i.imgur.com/EEguU02.jpg" width="60" class="rounded-circle ">
-                                <div class="itemid d-flex flex-column">
-                                    <span>Chicken momo</span>
-                                    <span>#41551</span>
-                                </div>
-                            </div>
-                            <div class="right d-flex justify-content-center align-items-center">
-                                <div class="qty d-flex align-items-center">
-                                    <span> - </span>
-                                    <input type="text" class="my-qty" value="1">
-                                    <span> + </span>
-                                </div>
-                                <div class="unit-price">
-                                    <span>$10.50</span>
-                                </div>
+            <h2 class="text-left font-weight-bold">購物車</h2>
+            <div class="progressbar">
+                <div class="row no-gutters">
+                    <div class="col w-25">
+                        <div class="position-relative mb-3">
+                            <div class="step1 mx-auto d-flex justify-content-center align-items-center text-white">
+                                <span class="text-center">1</span>
                             </div>
                         </div>
-                        <div class="item2 d-flex justify-content-between">
-                            <div class="left d-flex align-items-center">
-                                <img src="https://i.imgur.com/Uv2Yqzo.jpg" width="60" class="rounded-circle ">
-                                <div class="itemid d-flex flex-column">
-                                    <span>Spicy Mexican potatoes</span>
-                                    <span>#66999</span>
-                                </div>
+                        <div class="text-center">確認購物車</div>
+                    </div>
+                    <div class="col w-25">
+                        <div class="position-relative mb-3">
+                            <div class="line position-absolute rounded">
+                                <div class="line-active position-absolute rounded"></div>
                             </div>
-                            <div class="right d-flex justify-content-center align-items-center">
-                                <div class="qty d-flex align-items-center">
-                                    <span> - </span>
-                                    <input type="number" class="my-qty" value="1">
-                                    <span> + </span>
-                                </div>
-                                <div class="unit-price">
-                                    <span>$10.50</span>
-                                </div>
+                            <div class="step2 mx-auto d-flex justify-content-center align-items-center">
+                                <span class="text-center">2</span>
                             </div>
                         </div>
-                        <div class="item3 d-flex justify-content-between">
-                            <div class="left d-flex align-items-center">
-                                <img src="https://i.imgur.com/xbTAITF.jpg" width="60" class="rounded-circle ">
-                                <div class="itemid d-flex flex-column">
-                                    <span>Breakfast</span>
-                                    <span>#86577</span>
-                                </div>
-                            </div>
-                            <div class="right d-flex justify-content-center align-items-center">
-                                <div class="qty d-flex align-items-center">
-                                    <span> - </span>
-                                    <input type="number" class="my-qty" value="1">
-                                    <span> + </span>
-                                </div>
-                                <div class="unit-price">
-                                    <span>$10.50</span>
-                                </div>
+                        <div class="text-center">付款與運送方式</div>
+                    </div>
+                    <div class="col w-25">
+                        <div class="position-relative mb-3">
+                            <div class="line position-absolute rounded"></div>
+                            <div class="step3 mx-auto d-flex justify-content-center align-items-center">
+                                <span class="text-center">3</span>
                             </div>
                         </div>
+                        <div class="text-center">填寫資料</div>
                     </div>
-                </div>
-                <div class="sum d-flex flex-column align-items-end">
-                    <div class="count w-25 d-flex justify-content-between align-items-center">
-                        <span>數量:</span>
-                        <span>3</span>
+                    <div class="col w-25">
+                        <div class="position-relative mb-3">
+                            <div class="line position-absolute rounded"></div>
+                            <div class="step4 mx-auto d-flex justify-content-center align-items-center">
+                                <span class="text-center">4</span>
+                            </div>
+                        </div>
+                        <div class="text-center">完成訂購</div>
                     </div>
-                    <div class="sub-total w-25 d-flex justify-content-between align-items-center">
-                        <span>小計:</span>
-                        <span>$24.90</span>
-                    </div>
-                    <div class="shipping w-25 d-flex justify-content-between align-items-center">
-                        <span>運費:</span>
-                        <span>$24.90</span>
-                    </div>
-                    <div class="grand-total w-25 d-flex justify-content-between align-items-center">
-                        <span>總計:</span>
-                        <span>$24.90</span>
-                    </div>
-                </div>
-                <div class="next-step d-flex justify-content-between align-items-center">
-                    <div class="back d-flex align-items-center">
-                        <i class="fas fa-arrow-left"></i>
-                        <a class="text-dark" href="#">返回購物</a>
-                    </div>
-                    <button type="button" class="btn btn-primary btn-lg" onclick="location.href='./cart 2.html'">下一步</button>
                 </div>
             </div>
+            <!-----------------order listing begin------------------->
+            <div class="order-listing">
+                <h4 class="shopping-title">訂單明細</h4>
+                <div class="detail d-flex flex-column justify-content-around">
+                    <div class="item1 d-flex justify-content-between">
+                        <div class="left d-flex align-items-center">
+                            <img src="https://i.imgur.com/EEguU02.jpg" width="60" class="rounded-circle ">
+                            <div class="itemid d-flex flex-column">
+                                <span>Chicken momo</span>
+                                <span>#41551</span>
+                            </div>
+                        </div>
+                        <div class="right d-flex justify-content-center align-items-center">
+                            <div class="qty d-flex align-items-center">
+                                <span> - </span>
+                                <input type="text" class="my-qty" value="1">
+                                <span> + </span>
+                            </div>
+                            <div class="unit-price">
+                                <span>$10.50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item2 d-flex justify-content-between">
+                        <div class="left d-flex align-items-center">
+                            <img src="https://i.imgur.com/Uv2Yqzo.jpg" width="60" class="rounded-circle ">
+                            <div class="itemid d-flex flex-column">
+                                <span>Spicy Mexican potatoes</span>
+                                <span>#66999</span>
+                            </div>
+                        </div>
+                        <div class="right d-flex justify-content-center align-items-center">
+                            <div class="qty d-flex align-items-center">
+                                <span> - </span>
+                                <input type="number" class="my-qty" value="1">
+                                <span> + </span>
+                            </div>
+                            <div class="unit-price">
+                                <span>$10.50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item3 d-flex justify-content-between">
+                        <div class="left d-flex align-items-center">
+                            <img src="https://i.imgur.com/xbTAITF.jpg" width="60" class="rounded-circle ">
+                            <div class="itemid d-flex flex-column">
+                                <span>Breakfast</span>
+                                <span>#86577</span>
+                            </div>
+                        </div>
+                        <div class="right d-flex justify-content-center align-items-center">
+                            <div class="qty d-flex align-items-center">
+                                <span> - </span>
+                                <input type="number" class="my-qty" value="1">
+                                <span> + </span>
+                            </div>
+                            <div class="unit-price">
+                                <span>$10.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------order listing end------------------->
+            <!-------------------SUM begin-------------------->
+            <div class="sum d-flex flex-column align-items-end">
+                <div class="count w-25 d-flex justify-content-between align-items-center">
+                    <span>數量:</span>
+                    <span>3</span>
+                </div>
+                <div class="sub-total w-25 d-flex justify-content-between align-items-center">
+                    <span>小計:</span>
+                    <span>$24.90</span>
+                </div>
+                <div class="shipping w-25 d-flex justify-content-between align-items-center">
+                    <span>運費:</span>
+                    <span>$24.90</span>
+                </div>
+                <div class="grand-total w-25 d-flex justify-content-between align-items-center">
+                    <span>總計:</span>
+                    <span>$24.90</span>
+                </div>
+            </div>
+            <!---------------------SUM end-------------------->
+            <!--------------------next step begin------------->
+            <div class="next-step d-flex justify-content-between align-items-center">
+                <div class="back d-flex align-items-center">
+                    <i class="fas fa-arrow-left"></i>
+                    <a class="text-dark" href="#">返回購物</a>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" onclick="location.href='./cart 2.html'">下一步</button>
+            </div>
+            <!-----------------next step end-------------------->
         </div>
      </div>
     </main>

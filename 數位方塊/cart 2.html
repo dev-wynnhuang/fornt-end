@@ -52,35 +52,62 @@
     <main>
         <div class="main-container">
             <div class="checkout-board">
-                <div class="checkout-inner">
                     <h2 class="text-left font-weight-bold">購物車</h2>
-                    <div class="progress d-flex justify-content-around">
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-center">確認購物車</span>
+                    <div class="progressbar">
+                        <div class="row no-gutters">
+                            <div class="col w-25">
+                                <div class="position-relative mb-3">
+                                    <div class="step1 mx-auto d-flex justify-content-center align-items-center text-white">
+                                        <span class="text-center">1</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">確認購物車</div>
+                            </div>
+                            <div class="col w-25">
+                                <div class="position-relative mb-3">
+                                    <div class="line position-absolute rounded" style="background-color: rgb(110, 231, 183);">                                        
+                                    </div>
+                                    <div class="step2 mx-auto d-flex justify-content-center align-items-center text-white">
+                                        <span class="text-center">2</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">付款與運送方式</div>
+                            </div>
+                            <div class="col w-25">
+                                <div class="position-relative mb-3">
+                                    <div class="line position-absolute rounded">
+                                        <div class="line-active position-absolute rounded"></div>
+                                    </div>
+                                    <div class="step3 mx-auto d-flex justify-content-center align-items-center">
+                                        <span class="text-center">3</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">填寫資料</div>
+                            </div>
+                            <div class="col w-25">
+                                <div class="position-relative mb-3">
+                                    <div class="line position-absolute rounded"></div>
+                                    <div class="step4 mx-auto d-flex justify-content-center align-items-center">
+                                        <span class="text-center">4</span>
+                                    </div>
+                                </div>
+                                <div class="text-center">完成訂購</div>
+                            </div>
                         </div>
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-center">付款與運送方式</span>
-                        </div>
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-center">填寫資料</span>
-                        </div>
-                        <div class="col-3 d-flex flex-column">
-                            <span class="text-center">完成訂購</span>
-                        </div>                   
                     </div>
                     <div class="payment d-flex flex-column">
                         <span class="shopping-title">付款方式</span>
                         <div class="pay-method d-flex flex-column">
                             <label for="" class="credit d-flex align-items-center border-bottom">
-                                <input type="radio" name="payType">
+                                <input type="radio" name="payType" class="mr-2">
                                 <span>信用卡付款</span>
                             </label>
                             <label for=""class="atm d-flex align-items-center border-bottom">
-                                <input type="radio" name="payType">
+                                <input type="radio" name="payType" class="mr-2">
                                 <span>網路 ATM</span>
                             </label>
                             <label for=""class="store d-flex align-items-center">
-                                <input type="radio" name="payType">
+                                <input type="radio" name="payType" class="mr-2">
                                 <span>超商代碼</span>
                             </label>
                         </div>
@@ -89,11 +116,11 @@
                         <span class="shopping-title">運送方式</span>
                         <div class="ship-method d-flex flex-column">
                             <label for="" class="bcat d-flex align-items-center border-bottom">
-                                <input type="radio" name="shipType">
+                                <input type="radio" name="shipType" class="mr-2">
                                 <span>黑貓宅配</span>
                             </label>
                             <label for=""class="d2d d-flex align-items-center border-bottom">
-                                <input type="radio" name="shipType">
+                                <input type="radio" name="shipType" class="mr-2">
                                 <span>超商店到店</span>
                             </label>                         
                         </div>
@@ -122,7 +149,6 @@
                         </div>
                         <button type="button" class="btn btn-primary btn-lg" onclick="location.href='./cart 3.html'">下一步</button>
                     </div>
-                </div>
             </div>
          </div>
     </main>

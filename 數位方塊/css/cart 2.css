@@ -1,14 +1,12 @@
 *{
     box-sizing: border-box;
 }
-
 body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     margin: 0;
     padding: 0;
 }
-
 a.nav-link:hover{
     background-color: lightgrey;
     border-radius: 5px;
@@ -28,7 +26,6 @@ nav{
     padding: 0 32px;
     margin: 0 315px;
     height: 100%;
-    
 }
 main{
     width: 100%;
@@ -49,19 +46,41 @@ main{
     background-color: whitesmoke;
     border-radius: 8px;
 }
-.checkout-inner{
+.progressbar{
     width: 100%;
-    /* background-color: whitesmoke; */
-    margin: auto;
+    height: 120px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgb(229, 231, 235);
+}
+.step3, .step4{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+}
+.step1, .step2{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(16, 185, 129);
+}
+.line{
+    width: 180px;
+    height: 8px;
+    background-color: rgb(229, 231, 235);
+    top: calc(50% - 4px);
+    left: -90px;
+}
+.line-active{
+    width: 60px;
+    height: 8px;
+    background-color: rgb(110, 231, 183);
+    top: calc(50% - 4px);
+    left: 0;
 }
 .shopping-title{
     font-size: 24px;
-}
-.progress{
-    width: 100%;
-    height: 100%;
-    padding: 24px 0;
-    border-bottom: 1px solid lightgray;
 }
 .sum{
     margin-top: 24px;
@@ -75,7 +94,6 @@ main{
 .payment{
     margin-top: 24px;
     padding-top: 24px;
-    border-top: 1px solid lightgrey;
 }
 .pay-method{
     margin-top: 8px;
