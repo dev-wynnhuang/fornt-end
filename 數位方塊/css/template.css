@@ -8,7 +8,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+a img.logo{
+    margin: unset;
+}
 a.nav-link:hover{
     background-color: lightgrey;
     border-radius: 5px;
@@ -25,10 +27,8 @@ nav{
     height: 92px;
 }
 .nav-container{
-    padding: 0 32px;
-    margin: 0 315px;
+    padding: 0 24px;
     height: 100%;
-    
 }
 main{
     width: 100%;
@@ -37,11 +37,6 @@ main{
 }
 .container{
     padding: 96px 20px;
-}
-.nav-logo{
-    width: 138px;
-    height: 100%;
-    padding: 16px;
 }
 li{
     padding: 8px;
