@@ -15,44 +15,49 @@
 </head>
 <body>
     <!-------------------------- header begins ------------------------->
-    
-        <nav class="navbar navbar-expand-lg">
-            <div class="nav-container d-flex justify-content-around align-items-center">
-                <a class="navbar-brand" href="#">
-                    <img class="logo" src="./img/logo.svg" width="106" height="60" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-dropdown" aria-controls="nav-dropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                    <div class="collapse navbar-collapse" id="nav-dropdown">              
-                        <ul class="nav d-flex flex-nowrap justify-content-end align-items-center">
-                            <li class="nav-item">
-                            <a class="nav-link active text-dark" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Profolio</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link cart text-dark" href="./cart 1.html">
-                                    <i class="fas fa-shopping-cart fa-2x"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link user text-dark" href="./login.html">
-                                    <i class="fas fa-user-circle fa-2x"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>                                                                      
-            </div>
-        </nav>
-        
+    <header>      
+        <div class="nav-container">
+            <nav class="navbar navbar-expand-lg bg-white">                   
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand py-0 mr-0" href="#">
+                        <img class="logo" src="./img/logo.svg" width="106" height="60" alt="">
+                    </a>
+                </div>                       
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hidden-navbar" aria-controls="hidden-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none;"></path>
+                    </svg>
+                    </span>
+                </button>                     
+                <div class="collapse navbar-collapse" id="hidden-navbar">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link text-dark" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link text-dark" href="#">Profolio</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link text-dark" href="#">About</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link text-dark" href="#">Contact</a>
+                    </li>
+                    <div class="fas d-flex justify-content-center">
+                        <a class="nav-link cart text-dark mr-3 d-flex align-items-center" href="./cart 1.html">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
+                        </a>
+                        <a class="nav-link user text-dark d-flex align-items-center" href="./login.html">
+                            <i class="fas fa-user-circle fa-2x"></i>
+                        </a>
+                    </div>
+                    </ul>                         
+                </div>               
+            </nav>
+        </div> 
+    </header>    
     <!-------------------------- header ends --------------------------->
     <!-------------------------- main begins --------------------------->
     <main>
