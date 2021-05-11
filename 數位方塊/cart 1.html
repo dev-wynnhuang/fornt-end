@@ -118,12 +118,14 @@
                         </div>
                         <div class="right d-flex justify-content-center align-items-center">
                             <div class="qty d-flex align-items-center">
-                                <span> - </span>
-                                <input type="text" class="my-qty" value="1">
-                                <span> + </span>
+                                <button type="button" id="sub"> - </button>
+                                <input type="number" id="my-qty" value="1" readonly="">
+                                <button type="button" id="add"> + </button>
                             </div>
-                            <div class="unit-price">
-                                <span>$10.50</span>
+                            <div id="unit-price">
+                                
+                                    $<span id="dollar">10.50</span>
+                                
                             </div>
                         </div>
                     </div>
@@ -137,12 +139,14 @@
                         </div>
                         <div class="right d-flex justify-content-center align-items-center">
                             <div class="qty d-flex align-items-center">
-                                <span> - </span>
-                                <input type="number" class="my-qty" value="1">
-                                <span> + </span>
+                                <button type="button" id="sub"> - </button>
+                                <input type="number" id="my-qty" value="1" readonly="">
+                                <button type="button" id="add"> + </button>
                             </div>
-                            <div class="unit-price">
-                                <span>$10.50</span>
+                            <div id="unit-price">
+                                
+                                    $<span id="dollar">10.50</span>
+                                
                             </div>
                         </div>
                     </div>
@@ -156,12 +160,12 @@
                         </div>
                         <div class="right d-flex justify-content-center align-items-center">
                             <div class="qty d-flex align-items-center">
-                                <span> - </span>
-                                <input type="number" class="my-qty" value="1">
-                                <span> + </span>
+                                <button type="button" id="sub"> - </button>
+                                <input type="number" id="my-qty" value="1" readonly="">
+                                <button type="button" id="add"> + </button>
                             </div>
-                            <div class="unit-price">
-                                <span>$10.50</span>
+                            <div id="unit-price">
+                                $<span id="dollar">10.50</span>
                             </div>
                         </div>
                     </div>
@@ -307,9 +311,99 @@
             </div>
         </div>     
     </footer>
-   
+    
+
+    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        // declare variables
+        // let btnAdd = document.querySelectorAll('#add') 
+        // console.log(btnAdd);
+        // let btnSub = document.querySelectorAll('#sub') 
+        // console.log(btnSub);
+        // let qtyInput = document.querySelectorAll('#my-qty') 
+        // console.log(qtyInput);
+        
+        // btnAdd.forEach(element => {
+            
+        // });
+        
+        // btnAdd.addEventListener('click', function() {
+        //     qtyInput.value = parseInt(qtyInput.value) +1
+        // })
+
+        // btnSub.addEventListener('click', function() {
+        //     if (qtyInput.value <= 0) {
+        //         qtyInput.value = 0
+        //     }
+        //     else {
+        //         qtyInput.value = parseInt(qtyInput.value) -1
+        //     }
+        // })
+
+        
+        //setting default attribute to disabled of minus button
+        document.querySelector("#sub").setAttribute("disabled", "disabled");
+
+        //taking value to increment decrement input value
+        var valueCount
+
+        //taking price value in variable
+        var price = document.getElementById("dollar").innerText;
+        //forEach loop
+        price.forEach(element => {
+            
+        });
+        //price calculation function
+        function priceTotal() {
+            var total = valueCount * price;
+            document.getElementById("dollar").innerText = total
+        }
+
+        //plus button
+        document.querySelector("#add").addEventListener("click", function() {
+            //getting value of input
+            valueCount = document.getElementById("my-qty").value;
+
+            //input value increment by 1
+            valueCount++;
+
+            //setting increment input value
+            document.getElementById("my-qty").value = valueCount;
+
+            if (valueCount > 1) {
+                document.querySelector("#sub").removeAttribute("disabled");
+                document.querySelector("#sub").classList.remove("disabled")
+            }
+
+            //calling price function
+            priceTotal()
+        })
+
+        //minus button
+        document.querySelector("#sub").addEventListener("click", function() {
+            //getting value of input
+            valueCount = document.getElementById("my-qty").value;
+
+            //input value increment by 1
+            valueCount--;
+
+            //setting increment input value
+            document.getElementById("my-qty").value = valueCount
+
+            if (valueCount == 1) {
+                document.querySelector("#sub").setAttribute("disabled", "disabled")
+            }
+
+            //calling price function
+            priceTotal()
+        })
+    
+
+    </script>
+    
 </body>
 </html>
