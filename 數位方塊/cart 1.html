@@ -349,17 +349,17 @@
         document.querySelector("#sub").setAttribute("disabled", "disabled");
 
         //taking value to increment decrement input value
-        var valueCount
+        let valueCount
 
         //taking price value in variable
-        var price = document.getElementById("dollar").innerText;
+        let price = document.getElementById("dollar").innerText;
         //forEach loop
         price.forEach(element => {
             
         });
         //price calculation function
         function priceTotal() {
-            var total = valueCount * price;
+            let total = valueCount * price;
             document.getElementById("dollar").innerText = total
         }
 
@@ -401,8 +401,6 @@
             //calling price function
             priceTotal()
         })
-    
-
     </script>
     
 </body>
