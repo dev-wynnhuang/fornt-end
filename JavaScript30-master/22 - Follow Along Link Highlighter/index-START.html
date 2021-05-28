@@ -6,9 +6,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  
     <nav>
       <ul class="menu">
+        <span class="highlight"></span>
         <li><a href="">Home</a></li>
         <li><a href="">Order Status</a></li>
         <li><a href="">Tweets</a></li>
@@ -26,7 +27,41 @@
     </div>
 
   <script>
-    // 👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀
+    //API應用：Element.getBoundingClientRect() 此範例的 "element" 為 "now"
+    let now = null
+    let target = document.querySelectorAll('.menu a')
+    let highlight = document.querySelector('.highlight')
+    highlight.style.display = "none";
+
+    //座標設定
+    function setPosition(){
+      if (!now) return
+      let {top, left, width, height} = now.getBoundingClientRect()
+      highlight.style.display = ''
+      highlight.style.width = width + 'px'
+      highlight.style.height = height + 'px'
+      //區域 only nav link btn
+      highlight.style.top = now.offsetTop + 'px'
+      highlight.style.left = now.offsetLeft + 'px'
+      //全域 all browser link btn 
+      // highlight.style.top = top + window.scrollY + 'px'
+      // highlight.style.left = left + window.scrollX + 'px'
+    }
+
+    //摸到該連結後 找座標
+    function enterHandler(){
+      now = this
+      setPosition()
+    }
+    
+    //滑鼠摸到連結
+    target.forEach(element => {
+      element.addEventListener('mouseenter', enterHandler)
+    });
+
+    //RWD 視窗縮放設定
+    window.addEventListener('resize', setPosition)
+
   </script>
 </body>
 </html>

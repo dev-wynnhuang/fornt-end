@@ -35,6 +35,30 @@
   </div>
 
 <script>
+  //drag拖曳：開始 mousedown -> 正在 mousemove -> 結束 mouseup (mouseleave) 計算相對移動
+  let list = document.querySelector('.items')
+  let startX = 0
+
+  let dragStart = function(e){
+    list.classList.add('active')
+    // console.log(e);
+    startX = e.pageX;
+  }
+  let dragHandler = function(e){
+    if (list.classList.contains('active')){
+      let move = e.pageX - startX;
+      startX = e.pageX; //重新起始拖曳點
+      list.scrollLeft -= move * 5;
+    }
+  }
+  let dragStop = function(){
+    list.classList.remove('active')
+  }
+
+  list.addEventListener('mousedown', dragStart)
+  list.addEventListener('mousemove', dragHandler)
+  list.addEventListener('mouseup', dragStop)
+  list.addEventListener('mouseleave', dragStop)
 </script>
 
   </body>

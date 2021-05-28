@@ -54,7 +54,30 @@
   </div>
 
 <script>
+  //判斷捲軸在何時觸發 sticky nav事件 -> scrollY >= nav.offsetTop 
+  let nav = document.querySelector('#main');
+  let navPosition = nav.offsetTop;
 
+  function scrollHandler(){
+    // console.log(window.scrollY, nav.offsetTop);
+    if(window.scrollY >= navPosition){
+      //stick nav to top
+      document.body.classList.add('fixed-nav');
+      //選單吸住後 維持選單與內容高度差
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      }
+      else{
+      //normal
+      document.body.classList.remove('fixed-nav');
+      document.body.style.paddingTop = '';
+      }   
+  }
+
+  window.addEventListener('scroll', scrollHandler)
+  window.addEventListener('resize', function(){
+    navPosition = nav.offsetTop
+  })
+  //resize 螢幕旋轉時觸發
 </script>
 
 </body>

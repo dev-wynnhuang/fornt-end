@@ -43,6 +43,7 @@
   </div>
 
   <script>
+    
     function debounce(func, wait = 20, immediate = true) {
       var timeout;
       return function() {
@@ -57,6 +58,21 @@
         if (callNow) func.apply(context, args);
       };
     }
+
+    const images = document.querySelectorAll('img');
+    function scrollHandler(){
+      //scroll event
+      // console.log(window.scrollY)
+      let windowTop = window.scrollY;
+      let windowBottom = windowTop + window.innerHeight;
+
+      images.forEach(img => {
+        if (img.offsetTop + img.Height / 2 < windowBottom){
+          img.classList.add('active');
+        }
+      })
+    }
+    window.addEventListener('scroll', scrollHandler);
 
   </script>
 
