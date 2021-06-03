@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal demo</title>
+    <style>
+    
+    body{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        font-family: sans-serif;
+        font-size: 24px;
+    }
+    .background{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    a{
+        text-decoration: none;
+    }
+    .modal-open-btn{
+        width: 500px;
+        height: 300px;
+        padding: 20px;
+        color: #fff;
+        background-color: royalblue;
+        border-radius: 10px;
+    }
+    #modal{
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: none;
+    }
+    .modal-content{
+        width: 75%;
+        height: 30%;
+        padding: 30px;
+        border-radius: 8px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .modal-close-btn{
+        font-size: 36px;
+        float: right;
+    }
+    #modal:target{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <a class="modal-open-btn" href="#">show modal</a>
+    </div>
+    
+    <div id="modal">
+        <div class="modal-content">
+            <a class="modal-close-btn" href="#">&times;</a>
+            <h3>I am modal content</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nisi quam voluptates alias ab, minus hic saepe voluptas, mollitia rerum assumenda sapiente obcaecati accusantium rem repudiandae ex adipisci sunt illum tempora omnis! Ipsum.</p>
+        </div>
+    </div>
+</body>
+</html>
